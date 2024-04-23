@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Presentation 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="../images/presentation.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/tp04.css">
+</head>
+<body>
+    <!--Navigation bar-->
+
+    <div id="title">
+        <span id="track"></span>
+        <div id="timer">0:00</div>
+        <div id="duration">0:00</div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controlsOuter">
+        <div class="controlsInner">
+            <div id="loading"></div>
+            <div class="btn" id="playBtn"></div>
+            <div class="btn" id="pauseBtn"></div>
+            <div class="btn" id="prevBtn"></div>
+            <div class="btn" id="nextBtn"></div>
+        </div>
+        <div class="btn" id="playlistBtn"></div>
+        <div class="btn" id="volumeBtn"></div>
+    </div>
+
+    <!-- Playlist -->
+    <div id="playlist">
+        <div id="list"></div>
+    </div>
+
+    <!-- Progress -->
+    <div id="waveform"></div>
+    <div id="bar"></div>
+    <div id="progress"></div>
+
+    <!-- Volume -->
+    <div id="volume" class="fadeout">
+        <div id="barFull" class="bar"></div>
+        <div id="barEmpty" class="bar"></div>
+        <div id="sliderBtn"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.4/dist/howler.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/siriwave.js"></script>
+    <script src="../js/player.js"></script>
+</body>
+</html>
