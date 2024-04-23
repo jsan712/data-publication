@@ -1,13 +1,2 @@
-h1:hover {
-    color: darkblue;
-}
 
-p#welcome::first-letter {
-    font-size: larger;
-    color: blue;
-}
-
-p.secondary {
-    color: red;
-}
 

@@ -1,3 +1,21 @@
 h1 {
     color: #880000;
 }
+
+h3:hover {
+    color: darkblue;
+}
+
+p#first::first-letter {
+    font-size: larger;
+    color: blue;
+}
+
+p.secondary {
+    color: red;
+}
+
+p#third {
+    font-weight: bolder;
+    color: green;
+}
