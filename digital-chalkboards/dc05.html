@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Chalkboard 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="../../images/blackboard.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h3>Fruit Sorting</h3>
+        <p>In this section, we want to take an unordered array of fruit and sort it alphabetically. Then we should determine which input comes last.</p>
+        <p>The elements of the array are as follows: 'Watermelon', 'Apple', 'Orange', 'Kiwi'</p>
+        <button class="btn btn-primary" onclick="lastItem(['Watermelon', 'Apple', 'Orange', 'Kiwi'], 'output1')">Sort Fruit</button>
+        <div id="output1" class="mt-4"></div>
+
+        <h5>Let's add more fruit to the array!</h5>
+        <p>The elements of the array are now: 'Watermelon', 'Apple', 'Orange', 'Kiwi', 'Banana', 'Yuzu', 'Mango', 'Peach'</p>
+        <button class="btn btn-primary" onclick="lastItem(['Watermelon', 'Apple', 'Orange', 'Kiwi', 'Banana', 'Yuzu', 'Mango', 'Peach'],'output2')">Sort Fruit</button>
+        <div id="output2" class="mt-4"></div>
+
+        <h3>User Input</h3>
+        <p>In this section, the user will be prompted to enter some items which will then be sorted alphabetically.</p>
+        <button class="btn btn-primary" id="userInputButton">Input items</button>
+        <div id="outputArray" class="mt-4"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/dc05.js"></script>
+</body>
+</html>
