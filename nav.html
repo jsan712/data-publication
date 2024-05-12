@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">Josh Sanchez</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/data-publication.html">Data Publication</a>
+                    </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/digital-chalkboards/dc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Digital Chalkboards
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/digital-chalkboards/dc_01.html">Digital Chalkboard 1</a></li>
+                        <li><a class="dropdown-item" href="/digital-chalkboards/digital-chalkboard-week-03.html">Digital Chalkboard 2</a></li>
+                        <li><a class="dropdown-item" href="/digital-chalkboards/dc03.html">Digital Chalkboard 3</a></li>
+                        <li><a class="dropdown-item" href="/digital-chalkboards/dc04.html">Digital Chalkboard 4</a></li>
+                        <li><a class="dropdown-item" href="/digital-chalkboards/dc05.html">Digital Chalkboard 5</a></li>
+                        <li><a class="dropdown-item" href="/digital-chalkboards/dc06.html">Digital Chalkboard 6</a></li>
+                        <li><a class="dropdown-item" href="/digital-chalkboards/dc07.html">Digital Chalkboard 7</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/technical-presentations/tp.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Technical presentations
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/technical-presentations/tp01.html">Technical presentation 1</a></li>
+                        <li><a class="dropdown-item" href="/technical-presentations/tp02.html">Technical presentation 2</a></li>
+                        <li><a class="dropdown-item" href="/technical-presentations/tp03.html">Technical presentation 3</a></li>
+                        <li><a class="dropdown-item" href="/technical-presentations/tp04.html">Technical presentation 4</a></li>
+                        <li><a class="dropdown-item" href="/technical-presentations/tp05.html">Technical presentation 5</a></li>
+                        <li><a class="dropdown-item" href="/technical-presentations/tp06-1.html">Technical presentation 6 &mdash; Part 1</a></li>
+                        <li><a class="dropdown-item" href="/technical-presentations/tp06-2.html">Technical presentation 6 &mdash; Part 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var pathname = window.location.pathname;
+        const path = pathname.split('/');
+        var currentPage, directory;
+        if (path.length === 1){
+            currentPage = path[0];
+        }
+        else{
+            directory = path[0];
+            currentPage = path[path.length - 1];
+        }
+        $('[href*="' + currentPage + '"]').addClass('active');
+    </script>
+</nav>

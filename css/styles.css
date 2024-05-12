@@ -1,6 +1,6 @@
 body {
-    background-color: #D6D6CE;
-    color: black;
+  /* background-color: #D6D6CE; */
+  color: black;
 }
 
 nav {
@@ -16,10 +16,10 @@ p {
 }
 
 p#welcome {
-    font-size: larger;
-    margin-top: 20px;
-    font-weight: bold;
-    vertical-align: middle;
+  font-size: larger;
+  margin-top: 20px;
+  font-weight: bold;
+  vertical-align: middle;
 }
 
 .col-md-8 {
@@ -31,4 +31,21 @@ p#welcome {
 .row#welcome {
   align-items: center;
   margin-top: 200px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #D6D6CE;
+}
+
+/* .bi {
+  color: white;
+} */
+
+.icon-button {
+  /* background-color: #800000; */
+  margin-top: 5px;
 }
