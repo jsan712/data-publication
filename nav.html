@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="/index.html">Josh Sanchez</a>
@@ -43,6 +44,12 @@
 
     <script>
         var pathname = window.location.pathname;
+        var cleanPath = pathname.substring(pathname.lastIndexOf('/') + 1);
+        $('[href*="' + cleanPath + '"]').addClass('active');
+    </script>
+
+    <!-- <script>
+        var pathname = window.location.pathname;
         const path = pathname.split('/');
         var currentPage, directory;
         if (path.length === 1){
@@ -53,5 +60,5 @@
             currentPage = path[path.length - 1];
         }
         $('[href*="' + currentPage + '"]').addClass('active');
-    </script>
+    </script> -->
 </nav>
