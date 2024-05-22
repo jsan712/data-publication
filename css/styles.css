@@ -1,6 +1,9 @@
 body {
   /* background-color: #D6D6CE; */
   color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -49,13 +52,45 @@ p.inner-info {
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background-color: #D6D6CE;
+  margin-top: auto;
 }
 
 .icon-button {
   margin-top: 5px;
+}
+
+#carouselCaptions {
+  width: fit-content;
+  align-self: center;
+  align-items: center;
+}
+
+.carousel-inner {
+  object-fit: cover;
+  object-position: center;
+  height: 60vh;
+}
+
+.carousel-item {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-item:before {
+  content: "";
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .8));
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Cards */
+.cardBtn {
+  background-color: lightgray;
 }
